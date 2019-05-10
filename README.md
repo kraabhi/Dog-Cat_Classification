@@ -1,7 +1,7 @@
-# Dogs_Breed_Classification
-End to end Guide for Image classification by going through the Different Dogs Breed
+# Dog/cat Classification
+End to end Guide for Image classification by going through the Different Dogs and cats images 
 
-## I am going to share the end-to-end process of building dog breed classifier using TensorFlow.
+## I am going to share the end-to-end process of building dog/cat classifier using TensorFlow.
 
 When any one start learning deep learning with neural network, a time come when you will realize that the most powerful supervised deep learning techniques is the Convolutional Neural Networks.
 
