@@ -43,3 +43,22 @@ import Image
 print(Image.__file__)
 
 classifier.fit_generator(training_set , steps_per_epoch= 8000 , epochs= 5 , validation_data=test_set, validation_steps= 20)
+
+# Testing Results on random downloaded image
+import numpy as np
+from keras.preprocessing import image
+test_image = image.load_img("puppy-1903313__340.jpg",target_size =(64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image , axis= 0)
+result =classifier.predict(test_image)
+print(result)
+
+# chacking the labels associated with the images
+training_set.class_indices
+
+if result[0][0] >=0.5 :
+    predictions = 'Dog'
+else :
+    predictions = 'Cat'
+    
+print(predictions)
