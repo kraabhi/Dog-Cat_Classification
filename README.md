@@ -54,6 +54,9 @@ f(x) = x  x > 0
 a is 0.01 or so.       ### range of the Leaky ReLU is [-infinity,infinity]
 When a is not 0.01 then it is called Randomized ReLU.
 
+##The basic practical difference between Sigmoid and Softmax is that while both give output in [0,1] range, softmax ensures that the sum ##of outputs along channels (as per specified dimension) is 1 i.e., they are probabilities. Sigmoid just makes output between 0 to 1.
+
+##Hence, if you are using a one hot encoding scheme where one channel has probabilities of one class and other channel has probabilities ##of another, then you must use a Softmax activation.
 POOLING
 
 It can be called down sampling step where we use filter of size smaller then the rectified convoluted image . Generally we use max Pooling it takes the maximum value in the filter and preserve most important features.For example we define a spatial neighborhood 
