@@ -1,7 +1,8 @@
 # Dog/cat Classification
 
-# Before diving into image classification I suggest you to go throught the link for complete under standing of Deep Learning
+### Before diving into image classification I suggest you to go throught the link for complete under standing of Deep Learning
 https://www.analyticsvidhya.com/blog/2018/10/introduction-neural-networks-deep-learning/
+
 End to end Guide for Image classification by going through the Different Dogs and cats images 
 
 ## I am going to share the end-to-end process of building dog/cat classifier using TensorFlow.
